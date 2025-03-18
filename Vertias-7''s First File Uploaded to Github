@@ -1,6 +1,7 @@
 Hello!And Welcome!
 如下是用Python手法编写的一个模拟10086部分功能的代码
 作者为初学者，水平有限，若有错误，还请指正
+
 #用Python的手法来模拟10086的查询功能
 import random
 Tele_charge=random.randint(50,100)
