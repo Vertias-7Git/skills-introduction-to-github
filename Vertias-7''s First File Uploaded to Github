@@ -1,1 +1,45 @@
 Hello!And Welcome!
+如下是用Python手法编写的一个模拟10086部分功能的代码
+作者为初学者，水平有限，若有错误，还请指正
+#用Python的手法来模拟10086的查询功能
+import random
+Tele_charge=random.randint(50,100)
+FlowRate_1=random.randint(30,120)
+FlowRate_2=random.randint(1,99)
+Tele_Time_1=random.randint(50,500)
+Tele_Time_2=random.randint(1,9)
+Loca_1=random.randint(100,200)
+Loca_2=random.randint(100,999)
+Loca_3=random.randint(10,99)
+Loca_4=random.randint(0,9)
+answer='yes'
+while answer=='yes':
+    print("----------欢迎使用中国移动10086服务----------")
+    print("查询剩余话费请按1")
+    print("查询剩余流量请按2")
+    print("查询剩余通话时长请按3")
+    print("查询设备通信地址请按4")
+    print("转人工服务请按5")
+    print("退出操作系统请按0")
+    choice=eval(input("请选择您想办理的业务："))
+    if choice==1:
+        print("您的剩余话费为："+str(Tele_charge)+"元")
+    elif choice==2:
+        print("您的剩余流量为:"+str(FlowRate_1) +'.'+ str(FlowRate_2)+"元")
+    elif choice==3:
+        print("您的剩余通话时长为："+str(Tele_Time_1)+'.'+str(Tele_Time_2)+"分钟")
+    elif choice==4:
+        print("正在与查询系统取得联系，请稍后")
+        print("----------已查询到您的设备通信地址地址！----------")
+        print("您的通信地址是："+str(Loca_1)+'.'+str(Loca_2)+'.'+str(Loca_3)+'.'+str(Loca_4))
+    elif choice==5:
+        print("正在处理，请稍后......")
+    elif choice==0:
+        print("程序正在退出，请稍后......\n 谢谢使用！期待下次再会！")
+    else:
+        print("对不起，您的输入有误，请重新输入：")
+    answer=input("是否继续使用?(是：Yes/否：No):")
+    break
+else:
+    print("程序正在退出，请稍后......\n 谢谢使用，欢迎下次再会！")
+#TMD 真累啊
